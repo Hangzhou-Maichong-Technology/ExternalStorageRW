@@ -24,7 +24,7 @@ android {
         variant ->
             variant.outputs.all {
                 //这里修改apk文件名
-                outputFileName = "ExternalStorageRW-v${versionName}-${versionCode}.apk"
+                outputFileName = "ExternalStorageRW.apk"
             }
     }
 }
