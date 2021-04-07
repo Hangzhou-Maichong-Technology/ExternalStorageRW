@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_usb_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="文件：${UsbPath}/usbFile.txt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_usb"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="我是写入 U 盘的文字"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btn_usb_write"
+        app:layout_constraintTop_toBottomOf="@+id/tv_usb_tip" />
+
+    <Button
+        android:id="@+id/btn_usb_write"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="写文件"
+        app:layout_constraintLeft_toRightOf="@+id/et_usb"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_usb_tip" />
+
+    <TextView
+        android:id="@+id/tv_usb"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btn_usb_read"
+        app:layout_constraintTop_toBottomOf="@+id/et_usb" />
+
+    <Button
+        android:id="@+id/btn_usb_read"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="读文件"
+        app:layout_constraintLeft_toRightOf="@+id/tv_usb"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_usb" />
+
+    <TextView
+        android:id="@+id/tv_tfcard_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="文件：${TfCardPath}/tfCardFile.txt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_usb_tip" />
+
+    <EditText
+        android:id="@+id/et_tfcard"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="我是写入 TF 卡的文字"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btn_tfcard_write"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tfcard_tip" />
+
+    <Button
+        android:id="@+id/btn_tfcard_write"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="写文件"
+        app:layout_constraintLeft_toRightOf="@+id/et_tfcard"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tfcard_tip" />
+
+    <TextView
+        android:id="@+id/tv_tfcard"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btn_tfcard_read"
+        app:layout_constraintTop_toBottomOf="@+id/et_tfcard" />
+
+    <Button
+        android:id="@+id/btn_tfcard_read"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="读文件"
+        app:layout_constraintLeft_toRightOf="@+id/tv_tfcard"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_tfcard" />
+</android.support.constraint.ConstraintLayout>
